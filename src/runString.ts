@@ -26,6 +26,7 @@ function runCalculation(runWord: string): number {
   // This function is where the max run is calculated
   // the userInput is split, it find the highest string value
   // than it counts the amounts of charactors and returns it.
+  // https://www.javascripttutorial.net/es6/javascript-arrow-function/
   userInput.split('').forEach((value) => {
     const charCount = userInput.split(value).length - 1
     if (count < charCount) {
@@ -41,7 +42,7 @@ const prompt = promptSync()
 // program description text
 console.log('This is a Run program!')
 console.log('This program will calculate the run of STRINGS!')
-console.log('STRING EX. xxyyyz, this STRING has a run of 3, the letter is Y!')
+console.log('STRING EX. xxyyyz, this STRING has a run of 3!')
 
 // let userInput their string, and it checks the most
 // used charactor within the text!
